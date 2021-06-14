@@ -30,3 +30,23 @@ function hotelCost(days){
         return cost = days * 50; 
     }
 }
+
+
+function megaFriend(arr){
+
+    var bigStringSize = 0;
+    var longestName="";
+
+    for(let i = 0; i < arr.length; i++){
+        var element = arr[i];
+        var elementSize = arr[i].length;
+
+        if(elementSize > bigStringSize){
+            
+            bigStringSize = elementSize;
+            longestName = element;
+        }
+    }
+
+    return longestName;
+}
